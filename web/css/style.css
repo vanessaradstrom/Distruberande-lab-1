@@ -1,0 +1,495 @@
+/* ==========================================================================
+   WEBBSHOP - STYLE.CSS
+   ========================================================================== */
+
+/* =========================
+   GRUND
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #93c5fd;
+}
+
+
+/* =========================
+   HUVUDINNEHÅLL
+   ========================= */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 25px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+
+/* =========================
+   STARTSIDA
+   ========================= */
+
+.hero {
+  background-color: white;
+  text-align: center;
+
+  padding: 80px 30px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   PRODUKTER
+   ========================= */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product {
+  background-color: white;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.2s;
+
+  overflow: hidden;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
+.product h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #64748b;
+  min-height: 45px;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   PRODUKTBILDER
+   ========================= */
+
+.product-image {
+  width: 100%;
+  height: 180px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   KNAPPAR
+   ========================= */
+
+.button {
+  display: inline-block;
+
+  background-color: #2563eb;
+  color: white;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* =========================
+   FORMULÄR / LOGIN
+   ========================= */
+/* =========================
+   LOGIN
+   ========================= */
+/* =========================
+   LOGIN
+   ========================= */
+
+.form-container {
+  max-width: 450px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.form-container .subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.form-container input[type="submit"] {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+.login-success {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+}
+
+.login-success h2 {
+  color: #047857;
+}
+
+.login-error {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+}
+
+.login-error h2 {
+  color: #b91c1c;
+}
+
+/* =========================
+   VARUKORG
+   ========================= */
+
+.cart {
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* En produkt i varukorgen */
+
+.cart-item {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Bild */
+
+.cart-image {
+  width: 120px;
+  height: 100px;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+
+/* Produktinformation */
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h2 {
+  margin: 0 0 8px 0;
+
+  font-size: 20px;
+}
+
+.cart-info p {
+  margin: 0;
+
+  color: #64748b;
+}
+
+
+/* Pris */
+
+.cart-price {
+  font-size: 18px;
+
+  white-space: nowrap;
+}
+
+
+/* Totalsumma */
+
+.cart-total {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 0;
+
+  margin-top: 10px;
+
+  border-top: 2px solid #e2e8f0;
+
+  font-size: 22px;
+}
+
+.cart-total strong {
+  font-size: 26px;
+}
+
+
+/* Knappar */
+
+.cart-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 10px;
+}
+
+
+/* Extra knapp */
+
+.secondary-button {
+  background-color: #64748b;
+}
+
+.secondary-button:hover {
+  background-color: #475569;
+}
+
+
+/* Mobil */
+
+@media (max-width: 600px) {
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  .cart-image {
+    width: 90px;
+    height: 80px;
+  }
+
+  .cart-price {
+    width: 100%;
+    text-align: right;
+  }
+
+  .cart-buttons {
+    flex-direction: column;
+  }
+
+  .cart-buttons .button {
+    text-align: center;
+  }
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  text-align: center;
+
+  padding: 30px;
+
+  color: #64748b;
+
+  margin-top: 50px;
+}
+
+
+/* =========================
+   MOBIL / MINDRE SKÄRM
+   ========================= */
+
+@media (max-width: 800px) {
+
+  .header {
+    padding: 20px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
