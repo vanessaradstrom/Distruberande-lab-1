@@ -90,23 +90,23 @@
 
             total = total + item.getPrice();
 
-            String image = "";
+        String image = "";
 
-            if (item.getName().equals("Laptop")) {
-                image = "laptopdistru.jpeg";
-            }
-            else if (item.getName().equals("Mus")) {
-                image = "datormusdistru.jpeg";
-            }
-            else if (item.getName().equals("Tangentbord")) {
-                image = "tangentborddistru.jpeg";
-            }
-            else if (item.getName().equals("Skärm")) {
-                image = "skarmdistru.jpeg";
-            }
-            else if (item.getName().equals("Hörlurar")) {
-                image = "horlurardistru.webp";
-            }
+        if (item.getId() == 1) {
+            image = "laptopdistru.jpeg";
+        }
+        else if (item.getId() == 2) {
+            image = "datormusdistru.jpeg";
+        }
+        else if (item.getId() == 3) {
+            image = "tangentborddistru.jpeg";
+        }
+        else if (item.getId() == 4) {
+            image = "skarmdistru.webp";
+        }
+        else if (item.getId() == 5) {
+            image = "horlurardistru.jpeg";
+        }
 %>
 
             <div class="cart-item">
@@ -180,7 +180,7 @@
 <footer class="footer">
 
     <p>
-        © 2026 Webshop
+        &copy; 2026 Webshop
     </p>
 
 </footer>
